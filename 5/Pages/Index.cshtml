@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <label>Введіть значення:</label>
+    <input type="text" name="value" required /><br /><br />
+
+    <label>Виберіть дату та час:</label>
+    <input type="datetime-local" name="expiryDate" required /><br /><br />
+
+    <button type="submit">Відправити</button>
+</form>
